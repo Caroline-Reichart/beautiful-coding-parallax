@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playwrite+US+Modern:wght@100..400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{outline: 1px solid black;} 
+
 
 :root{
     --primary-color: #f4c3c2;
@@ -11,6 +11,13 @@
     --secondary-text-color:#4b4d49;
 }
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
 body, html {
     height: 100%;
     margin: 0;
@@ -18,7 +25,7 @@ body, html {
     scroll-behavior: smooth;
   }
   
-  .parallax-section {
+.parallax-section {
     height: 100vh;
     background-attachment: fixed;
     background-position: center;
@@ -59,7 +66,6 @@ body, html {
     color: var(--secondary-text-color);
     text-shadow: 3px 3px var(--primary-color);
     font-size: 100px;
-    margin-top: 8rem;
 }
 
 .webdev{
@@ -152,7 +158,9 @@ body, html {
 
 .content-section-grid{
     background-color: var(--secondary-text-color);
-    .grid_container{
+}
+
+.grid_container{
         margin: 60px auto; 
         max-width: 90%;
         background-color: var(--primary-color);
@@ -164,22 +172,22 @@ body, html {
         grid-template-areas: 
         "item1 item1 item2 item3"
         "item4 item5 item5 item3";
-    }
+}
     
-    #item1{
+#item1{
         grid-area: item1;
         display: flex;
         justify-content: center;
         align-items: center;
         
-    }
+}
     
-    #item2{
+#item2{
         grid-area: item2;
         flex-direction: column;
         
-    }
-    
+}
+   
     #item3{
         grid-area: item3;
         flex-direction: column;
@@ -233,7 +241,7 @@ body, html {
         margin-right: 25px;
     }
     
-}
+
 
 .content-section-footer{
     padding: 20px;
